@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GStreamo Tournament Registration</title>
+    <style>
+        /* Basic Styles */
+        body, html {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(Starbucks\ background.png) no-repeat center center fixed; /* background */
+            background-size: cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            color: #fff;
+            border-bottom: 3px solid #45a247;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: hwb(136 2% 30%);
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #0c290e, #329b5e, #0c290e);
+            padding: 15px 30px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #1eff5a;
+        }
+
+        /* button Styles */
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #40ff1e;
+            transition: width 0.4s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Starbucks Logo Styles */
+        .logo {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            transition: transform 0.4s ease-in-out;
+        }
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Section Styles */
+        .section-title {
+            font-size: 2em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            color: #ffcc00;
+        }
+        .games-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        /* Styles */
+        .game-card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #45a247;
+            border-radius: 15px;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s, border-color 0.4s;
+        }
+        .game-card:hover {
+            transform: scale(1.1);
+            border-color: #ff1e56;
+        }
+        .game-logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px #ff1e56;
+        }
+        .description {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #999;
+            border-top: 3px solid #45a247;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .games-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <img src="Starbucks logo.png" alt="Starbucks" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Post</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Starbucks</h1>
+    </header>
+
+    <!-- Barista Recommends Section -->
+    <h2 class="section-title">Barista Recommends</h2>
+    <div class="games-section">
+        <div class="game-card">
+            <img src="Cappuccino.jpeg" alt="Cappuccino" class="game-logo">
+            <h3>Cappuccino</h3>
+            <p class="description">Cappuccino is a coffee drink made with espresso, steamed milk, and milk foam. 
+            </p>
+        </div>
+        <div class="game-card">
+            <img src="Signature Hot Chocolate01.jpeg" alt="Signature Hot Chocolate" class="game-logo">
+            <h3>Signature Hot Chocolate</h3>
+            <p class="description">Steamed milk and mocha sauce topped with sweetened whipped cream and a chocolate-flavored drizzle.</p>
+        </div>
+        <div class="game-card">
+            <img src="Vanilla Milkshake.jpeg" alt="Vanilla Milkshake" class="game-logo">
+            <h3>Vanilla Milkshake</h3>
+            <p class="description"> rich and creamy blend of vanilla bean, milk and ice topped with whipped cream takes va-va-vanilla flavor to another level.</p>
+        </div>
+        <div class="game-card">
+            <img src="Cold Brew Black.jpeg" alt="Cold Brew Black" class="game-logo">
+            <h3>Cold Brew Black</h3>
+            <p class="description">Cold Brew Black is usually made by steeping coffee in water for a number of hours at cold or ambient (room) temperature.</p>
+        </div>
+        <div class="game-card">
+            <img src="Tall Java Chip Frappuccino.jpeg" alt="Tall Java Chip Frappuccino" class="game-logo">
+            <h3>Tall Java Chip Frappuccino</h3>
+            <p class="description">We blend mocha sauce and Frappuccino chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.</p>
+        </div>
+    </div>
+    <h2 class="section-title">Handcrafted Curations</h2>
+    <div class="games-section">
+        <div class="game-card">
+            <img src="Drinks.jpeg" alt="Drinks" class="game-logo">
+            <h3>Drinks</h3>
+            <p class="description">Hot Coffees · Cold Coffees · Starbucks Refreshers Beverages · Frappuccino Blended Beverages · Iced Tea & Lemonade · Hot Teas · Iced Energy</p>
+        </div>
+        <div class="game-card">
+            <img src="Food.jpeg" alt="Food" class="game-logo">
+            <h3>Food</h3>
+            <p class="description">Warm Sandwiches · Crispy Grilled Cheese on Sourdough · Ham & Swiss on Baguette · Turkey, Provolone & Pesto on Ciabatta · Tomato & Mozzarella on Focaccia</p>
+        </div>
+        <div class="game-card">
+            <img src="Merchandise.jpeg" alt="Merchandise" class="game-logo">
+            <h3>Merchandise</h3>
+            <p class="description">Mugs · Drinkware · Cold Drinkware · Machines · Accessories.</p>
+        </div>
+        <div class="game-card">
+            <img src="Coffee At Home.jpeg" alt="Coffee At Home" class="game-logo">
+            <h3>Coffee At Home</h3>
+            <p class="description">Unleash your inner barista! Elevate your daily routines with our at-home coffee adventures. Shop our blends to find your new favorite way to start your day.</p>
+        </div>
+        <div class="game-card">
+            <img src="ready to eat.jpeg" alt="Ready To Eat" class="game-logo">
+            <h3>Ready To Eat</h3>
+            <p class="description">Java Chip Frappuccino · Caffe Americano · Cold coffee · Double Chocolate Chip Frappuccino · Cappuccino · Paneer Tikka Sandwich · Double Chocolate Chip Cookie</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 StarbucksCoffeeCompany | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

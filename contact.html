@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Contact Us</title>
+    <style>
+        /* General Styling */
+        body, html {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        /* Navigation Bar */
+        .logo {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            transition: transform 0.4s ease-in-out;
+        }
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #0c290e, #329b5e, #0c290e);
+            padding: 15px 30px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #1eff5a;
+        }
+
+        /* button Styles */
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #40ff1e;
+            transition: width 0.4s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Contact Us Section */
+        .contact-us {
+            width: 60%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .contact-us h1, .contact-us h2 {
+            color: #006241;
+            text-align: center;
+        }
+        .contact-us p, .contact-us ul, .contact-us form {
+            margin: 20px 0;
+            color: #4c4c4c;
+        }
+        .contact-us ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-us ul li {
+            margin-bottom: 10px;
+        }
+        .contact-us a {
+            color: #006241;
+            text-decoration: none;
+        }
+        .contact-us a:hover {
+            text-decoration: underline;
+        }
+
+        /* Feedback Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        form input[type="submit"] {
+            width: 100px;
+            margin: 20px 0;
+            background-color: #006241;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #c0a062;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #999;
+            border-top: 3px solid #45a247;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <img src="Starbucks logo.png" alt="Starbucks" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Post</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h1>Contact Us</h1>
+        <p>At Starbucks, we value our customers and want to hear from you. Whether you have a question, comment, or concern, we're here to listen and help. Our customer service team is dedicated to providing you with an exceptional experience, and we're always happy to assist you.</p>
+
+        <!-- Get in Touch -->
+        <h2>Get in Touch</h2>
+        <ul>
+            <li><strong>Phone:</strong> 1-800-STARBUC (1-800-782-7282)</li>
+            <li><strong>Email:</strong> <a href="mailto:customer.service@starbucks.com">customer.service@starbucks.com</a></li>
+            <li><strong>Mail:</strong> Starbucks Customer Service, P.O. Box 34067, Seattle, WA 98124-1067</li>
+            <li><strong>Social Media:</strong> Follow us on <a href="https://www.facebook.com/starbucks">Facebook</a>, <a href="https://twitter.com/starbucks">Twitter</a>, <a href="https://www.instagram.com/starbucks">Instagram</a>, and <a href="https://www.linkedin.com/company/starbucks">LinkedIn</a></li>
+            <li><strong>Store Locator:</strong> Find your nearest Starbucks store and get in touch with our baristas directly.</li>
+        </ul>
+
+        <!-- Feedback Form -->
+        <h2>Feedback Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Office Locations -->
+        <h2>Office Locations</h2>
+        <p>If you need to visit us in person, our office locations are:</p>
+        <ul>
+            <li>Starbucks Headquarters: 2401 Utah Avenue South, Seattle, WA 98134</li>
+            <li>Regional Offices: [list of regional office locations]</li>
+        </ul>
+
+        <!-- Hours of Operation -->
+        <h2>Hours of Operation</h2>
+        <p>Our customer service team is available to assist you Monday through Friday, 5am to 8pm PST.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 StarbucksCoffeeCompany | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

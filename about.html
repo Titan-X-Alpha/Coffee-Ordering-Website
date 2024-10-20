@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Starbucks</title>
+    <style>
+        /* General Styling */
+        body, html {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        /* Navigation Bar */
+        .logo {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            transition: transform 0.4s ease-in-out;
+        }
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #0c290e, #329b5e, #0c290e);
+            padding: 15px 30px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #1eff5a;
+        }
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #40ff1e;
+            transition: width 0.4s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* About Us Section */
+        .about-us {
+            width: 60%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .about-us h1, .about-us h2 {
+            color: #006241;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about-us p {
+            text-align: justify;
+            color: #4c4c4c;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        .about-us h2 {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #999;
+            border-top: 3px solid #45a247;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <img src="Starbucks logo.png" alt="Starbucks" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Post</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h1>About Starbucks</h1>
+        <p>
+            Starbucks is a global coffeehouse chain that has revolutionized the way people enjoy coffee. Founded in 1971 in Seattle, Washington, Starbucks has grown from a single store selling high-quality coffee beans and equipment to a multinational company with over 32,000 locations worldwide. Known for its signature green logo and warm ambiance, Starbucks is more than just a coffeehouse—it's a community hub where people come to relax, connect, and enjoy a variety of handcrafted beverages.
+        </p>
+        <p>
+            The Starbucks experience is defined by its commitment to quality, sustainability, and innovation. The company sources coffee beans from ethical and sustainable farms around the world, ensuring not only premium quality but also environmental responsibility. Starbucks has implemented various initiatives, including fair trade certification and the Coffee and Farmer Equity (C.A.F.E.) Practices, to support farmers and promote sustainable coffee production.
+        </p>
+        <p>
+            Beyond coffee, Starbucks has become synonymous with a culture of inclusivity and connection. The company fosters a welcoming environment for all customers, encouraging them to make Starbucks their “third place” between home and work. The menu has evolved over the years to include a diverse range of options, from classic espresso beverages to teas, smoothies, and seasonal favorites. Moreover, Starbucks caters to health-conscious customers with dairy-free and plant-based options.
+        </p>
+        <p>
+            Innovation is at the heart of Starbucks' success. The company continually adapts to customer preferences, introducing mobile ordering, drive-thru services, and the Starbucks Rewards program, which allows loyal customers to earn points and enjoy personalized offers. Starbucks has also embraced the digital age by expanding its presence on social media and creating an engaging online community.
+        </p>
+        <h2>Our Vision and Mission</h2>
+        <p>
+            Starbucks’ mission is to inspire and nurture the human spirit—one person, one cup, and one neighborhood at a time. This mission reflects the company’s dedication to creating a positive impact on both local communities and the world. Through partnerships, employee engagement, and philanthropy, Starbucks aims to make a difference in the lives of the people they serve.
+        </p>
+        <p>
+            As Starbucks continues to grow, it remains focused on its core values of quality, sustainability, and social responsibility. Whether it’s through ethically sourced coffee, environmental conservation efforts, or a strong commitment to diversity and inclusion, Starbucks is always looking for ways to positively influence the world.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 StarbucksCoffeeCompany | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
